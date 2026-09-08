@@ -1,0 +1,6 @@
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+const progress=$('.scrollbar'); addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(scrollY/h*100)+'%'});
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12}); $$('.reveal').forEach(x=>obs.observe(x));
+const theme=$('#theme'); theme.onclick=()=>{document.body.classList.toggle('dark');localStorage.setItem('theme',document.body.classList.contains('dark')?'dark':'light')}; if(localStorage.getItem('theme')==='dark')document.body.classList.add('dark');
+$$('[data-count]').forEach(el=>{let done=false;const o=new IntersectionObserver(es=>{if(es[0].isIntersecting&&!done){done=true;const target=+el.dataset.count;if(target>1000){el.textContent=target;return}let n=0;const step=Math.max(1,Math.ceil(target/25));const t=setInterval(()=>{n+=step;if(n>=target){n=target;clearInterval(t)}el.textContent=n},35)}});o.observe(el)});
+const c=$('.cursor'),c2=$('.cursor2');addEventListener('mousemove',e=>{if(c){c.style.left=e.clientX+'px';c.style.top=e.clientY+'px';c2.style.left=e.clientX+'px';c2.style.top=e.clientY+'px'}});
