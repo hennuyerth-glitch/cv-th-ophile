@@ -24,3 +24,4 @@ Cette version est basée sur le contenu du CV PDF fourni.
    `https://TON-PSEUDO.github.io/cv-interactif/`
 
 Tu pourras ensuite mettre ce lien dans tes candidatures et sur LinkedIn.
+https://hennuyerth-glitch.github.io/cv-th-ophile/
