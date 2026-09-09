@@ -10,7 +10,7 @@ Cette version est basée sur le contenu du CV PDF fourni.
 - `CV-Theophile-Hennuyer-2026.pdf` : CV PDF actuel pour le bouton de téléchargement
 
 ## À faire avant publication
-1. Remplacer le texte du bloc LinkedIn dans `index.html` par ton vrai lien LinkedIn.
+1. Met le texte du bloc LinkedIn dans `index.html` https://www.linkedin.com/in/th%C3%A9ophile-hennuyer-05ab212a5/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJiwUjKOqSk6fFwB5Z37atg%3D%3D 
 2. Vérifier les informations et les dates.
 3. Si tu veux, remplacer les niveaux de compétences indicatifs par des niveaux que tu assumes réellement.
 
